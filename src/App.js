@@ -38,7 +38,7 @@ unsubscribeFromAuth = null;
     return (
     
       <div>
-          <Header  />
+          <Header currentUser={this.state.currentUser} />
       <Switch>
     
         <Route  exact path='/' component={HomePage}/>
