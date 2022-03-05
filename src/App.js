@@ -52,7 +52,7 @@ componentDidMount() {
     return (
     
       <div>
-          <Header currentUser={this.state.currentUser} />
+          <Header  />
       <Switch>
     
         <Route  exact path='/' component={HomePage}/>
