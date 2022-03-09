@@ -10,6 +10,7 @@ import { connect } from 'react-redux';
 import {selectCurrentUser} from './redux/user/user.selectors';
 import {createStructuredSelector} from 'reselect'
 import { setCurrentUser } from './redux/user/user.actions';
+import Chekout from './pages/checkout/checkout.component';
 
 
 
@@ -51,6 +52,7 @@ componentDidMount() {
       <Switch>
     
         <Route  exact path='/' component={HomePage}/>
+        <Route  exact path='/checkout' component={Chekout}/>
         <Route   path='/shop' component={ShopPage}/>
 
         <Route
